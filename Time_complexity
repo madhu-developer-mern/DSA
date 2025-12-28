@@ -1,0 +1,311 @@
+1. What Is Time Complexity?
+
+Time complexity measures how execution time grows as input size (n) grows.
+It does not measure seconds or milliseconds. It measures growth rate.
+
+Why it matters
+
+Hardware speed changes; algorithms remain.
+
+Predicts scalability and cost.
+
+Determines feasibility under production load.
+
+We express time complexity using Big-O notation.
+
+2. Big-O Notation (What It Really Means)
+
+Big-O describes the upper bound of growth.
+
+Notation	Meaning
+O(1)	Constant
+O(log n)	Logarithmic
+O(n)	Linear
+O(n log n)	Linearithmic
+O(n²)	Quadratic
+O(2ⁿ)	Exponential
+O(n!)	Factorial
+
+Key rule:
+➡ Ignore constants and lower-order terms.
+
+3. How to Calculate Time Complexity (Step-by-Step Method)
+Step 1: Identify input size (n)
+
+Length of array
+
+Number of nodes
+
+Number of elements
+
+Step 2: Count operations relative to n
+
+Loops
+
+Nested loops
+
+Recursion depth
+
+Function calls
+
+Step 3: Keep the dominant term
+
+Drop constants
+
+Drop smaller terms
+
+4. Examples (In Detail)
+Example 1: Constant Time – O(1)
+def get_first(arr):
+    return arr[0]
+
+
+Analysis
+
+One operation
+
+Does not depend on n
+
+Time Complexity: O(1)
+
+Example 2: Linear Time – O(n)
+def sum_array(arr):
+    total = 0
+    for x in arr:
+        total += x
+    return total
+
+
+Analysis
+
+Loop runs n times
+
+Each iteration is constant
+
+Time Complexity:
+O(n)
+
+Example 3: Nested Loops – O(n²)
+def print_pairs(arr):
+    for i in arr:
+        for j in arr:
+            print(i, j)
+
+
+Analysis
+
+Outer loop → n
+
+Inner loop → n
+
+Total operations → n × n
+
+Time Complexity:
+O(n²)
+
+Example 4: Loop + Loop (Not Nested) – O(n)
+def two_loops(arr):
+    for x in arr:
+        print(x)
+    for y in arr:
+        print(y)
+
+
+Analysis
+
+First loop → n
+
+Second loop → n
+
+Total → 2n → drop constant
+
+Time Complexity:
+O(n)
+
+Example 5: Logarithmic Time – O(log n)
+def binary_search(arr, target):
+    low, high = 0, len(arr) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            return True
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return False
+
+
+Analysis
+
+Input halves every iteration
+
+n → n/2 → n/4 → n/8 …
+
+Time Complexity:
+O(log n)
+
+Example 6: Linearithmic – O(n log n)
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+    return merge(left, right)
+
+
+Analysis
+
+Splitting depth → log n
+
+Merging at each level → n
+
+Time Complexity:
+O(n log n)
+
+Example 7: Exponential – O(2ⁿ)
+def fib(n):
+    if n <= 1:
+        return n
+    return fib(n-1) + fib(n-2)
+
+
+Analysis
+
+Recursive calls double
+
+Tree grows exponentially
+
+Time Complexity:
+O(2ⁿ) ❌ (unacceptable in production)
+
+5. Best, Average, Worst Case
+Case	Example
+Best	Element found at first index
+Average	Found in middle
+Worst	Not found / last index
+
+Interviews care about worst-case unless stated otherwise.
+
+6. What Is Space Complexity?
+
+Space complexity measures extra memory used by the algorithm.
+
+It includes:
+
+Temporary variables
+
+Data structures
+
+Recursion stack
+
+It excludes:
+
+Input size itself (usually)
+
+7. How to Calculate Space Complexity
+Step 1: Identify auxiliary space
+
+New arrays
+
+Hash maps
+
+Recursion stack
+
+Step 2: Express in terms of n
+
+Constant → O(1)
+
+Proportional → O(n)
+
+8. Space Complexity Examples
+Example 1: O(1) Space
+def reverse_in_place(arr):
+    arr.reverse()
+
+
+No extra data structures
+
+Space Complexity:
+O(1)
+
+Example 2: O(n) Space
+def copy_array(arr):
+    new_arr = []
+    for x in arr:
+        new_arr.append(x)
+    return new_arr
+
+
+New array of size n
+
+Space Complexity:
+O(n)
+
+Example 3: Recursive Space – O(n)
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n-1)
+
+
+Call stack grows to n
+
+Space Complexity:
+O(n)
+
+Example 4: Merge Sort Space
+
+Temporary arrays created at each level
+
+Space Complexity:
+O(n)
+
+9. Time vs Space Trade-off (Real-World Truth)
+Strategy	Time	Space
+Brute force	Slow	Low
+Hashing	Fast	High
+Memoization	Faster	Higher
+
+In production systems:
+
+CPU is cheaper than latency
+
+Memory is cheaper than downtime
+
+We optimize for time first, space second
+
+10. Common Interview Traps (Be Aware)
+
+Ignoring recursion stack
+
+Counting input space incorrectly
+
+Confusing nested loops with sequential loops
+
+Forgetting worst-case
+
+Claiming O(1) when hidden loops exist
+
+11. Quick Complexity Cheat Sheet
+Pattern	Time
+Single loop	O(n)
+Nested loop	O(n²)
+Divide by 2	O(log n)
+Loop + log	O(n log n)
+Recursive doubling	O(2ⁿ)
+12. How Interviewers Actually Evaluate You
+
+They expect:
+
+Correct complexity
+
+Clear reasoning
+
+Ability to optimize
+
+Awareness of trade-offs
+
+If you say “It depends”, you must explain why.
