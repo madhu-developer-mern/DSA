@@ -1,0 +1,201 @@
+HOW TO CALCULATE SPACE COMPLEXITY (UNIVERSAL METHOD)
+Definition (Say this if asked)
+
+Space complexity is the amount of extra (auxiliary) memory used by an algorithm as a function of input size.
+
+Key word: extra
+(Input storage itself is usually not counted unless explicitly asked.)
+
+STEP-BY-STEP FRAMEWORK
+STEP 1: Identify the input size variable
+
+Array → n
+
+Matrix → R × C
+
+Tree → n nodes
+
+Graph → V nodes
+
+String → n
+
+You must name this before giving Big-O.
+
+STEP 2: List ALL extra memory used
+
+Ask yourself:
+
+Are new arrays/lists created?
+
+Is a hash map / set used?
+
+Is recursion used?
+
+Is a queue or stack used?
+
+Ignore:
+
+Loop variables
+
+Fixed number of integers
+
+Temporary constants
+
+STEP 3: Classify each memory usage
+Memory Type	Space
+Few variables	O(1)
+Array/list of size n	O(n)
+Matrix copy	O(R × C)
+HashMap storing n items	O(n)
+Recursion stack depth n	O(n)
+Recursion stack depth log n	O(log n)
+STEP 4: Take the dominant term
+
+Same rule as time complexity.
+
+COMMON PATTERNS (MEMORIZE THESE)
+Pattern 1: No Extra Data Structures → O(1)
+def max_element(arr):
+    m = arr[0]
+    for x in arr:
+        if x > m:
+            m = x
+    return m
+
+
+Extra memory:
+
+One variable m
+
+Space Complexity: O(1)
+
+Pattern 2: New Array or List → O(n)
+def reverse_copy(arr):
+    res = []
+    for x in arr:
+        res.append(x)
+    return res
+
+
+Extra memory:
+
+New array of size n
+
+Space Complexity: O(n)
+
+Pattern 3: HashMap / Set → O(n)
+def has_duplicates(arr):
+    seen = set()
+    for x in arr:
+        if x in seen:
+            return True
+        seen.add(x)
+    return False
+
+
+Extra memory:
+
+Set storing up to n elements
+
+Space Complexity: O(n)
+
+Pattern 4: Recursion Stack (VERY IMPORTANT)
+def factorial(n):
+    if n == 1:
+        return 1
+    return n * factorial(n-1)
+
+
+Extra memory:
+
+Call stack grows to depth n
+
+Space Complexity: O(n)
+
+Pattern 5: Divide & Conquer Recursion
+def binary_search(arr, x, l, r):
+    if l > r:
+        return -1
+    mid = (l + r) // 2
+    if arr[mid] == x:
+        return mid
+    elif arr[mid] < x:
+        return binary_search(arr, x, mid+1, r)
+    else:
+        return binary_search(arr, x, l, mid-1)
+
+
+Extra memory:
+
+Call stack depth = log n
+
+Space Complexity: O(log n)
+
+Pattern 6: BFS / DFS
+BFS (queue)
+queue = []
+
+
+Worst case:
+
+All nodes in queue
+
+Space: O(n)
+
+DFS (recursive)
+
+Call stack = height of tree
+
+Tree type	Space
+Balanced	O(log n)
+Skewed	O(n)
+Pattern 7: Grid / Matrix BFS (Rotten Oranges, Flood Fill)
+
+Extra memory:
+
+Queue
+
+Visited array OR grid modification
+
+Worst case:
+
+All cells stored
+
+Space Complexity: O(R × C)
+
+Pattern 8: Sorting Space (Interview Trap)
+Algorithm	Space
+Merge Sort	O(n)
+Quick Sort (avg)	O(log n)
+Heap Sort	O(1)
+
+Python’s sort() → O(n) auxiliary space (Timsort).
+
+WHAT TO SAY IN INTERVIEW (STRUCTURE)
+
+Use this format:
+
+“The algorithm uses [data structure / recursion] which can grow up to [n / R×C / log n], so the auxiliary space complexity is O(...).”
+
+Example:
+
+“The BFS queue can store all grid cells in the worst case, so space complexity is O(R×C).”
+
+COMMON MISTAKES (DO NOT DO THESE)
+
+❌ Counting input array as space
+❌ Counting loop variables
+❌ Forgetting recursion stack
+❌ Saying O(1) when using HashMap
+❌ Saying O(n) without explaining why
+
+QUICK DECISION TABLE
+Question	Answer
+New data structure grows with input?	O(n)
+Only few variables?	O(1)
+Recursion depth = n?	O(n)
+Recursion depth = log n?	O(log n)
+Grid BFS/DFS?	O(R×C)
+FINAL ONE-LINE RULE (MEMORIZE)
+
+Space complexity = max(extra memory used at any time).
