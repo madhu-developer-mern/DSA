@@ -1,0 +1,540 @@
+Theory Questions
+What is a singly linked list and how is it structured in memory?
+How does a singly linked list differ from an array in terms of access time and memory usage?
+What are the time complexities of insertion, deletion, and traversal?
+What are the advantages and disadvantages of singly linked lists?
+What is a null pointer and why is it important in SLL?
+How do you handle memory allocation and deallocation in SLL?
+What are common edge cases in singly linked list operations?
+Why is random access not possible in SLL?
+What is the impact of cache locality in linked lists vs arrays?
+When would you choose a linked list over a dynamic array?
+Create a singly linked list from an array.
+Insert a node at the beginning.
+Insert a node at the end.
+Insert a node at a given position.
+Insert a node after a given node.
+Insert a node before a given node.
+Delete the first node.
+Delete the last node.
+Delete a node by value.
+Delete a node by position.
+Delete all occurrences of a given key.
+Traverse and print a singly linked list.
+Count the number of nodes.
+Search for a given element.
+Find the middle node.
+Find the nth node from the beginning.
+Find the nth node from the end.
+Reverse a singly linked list iteratively.
+Reverse a singly linked list recursively.
+Reverse the first k nodes of a linked list.
+Reverse nodes in groups of k.
+Reverse alternate groups of k nodes.
+Reverse a sublist between positions left and right.
+Pairwise reverse nodes.
+Swap two nodes without swapping data.
+Move the last node to the front.
+Rotate the linked list to the right by k places.
+Rotate the linked list to the left by k places.
+Check whether the linked list is a palindrome using stack.
+Check whether the linked list is a palindrome by reversing the second half.
+Restore the list after palindrome check.
+Detect a loop using Floyd’s cycle detection.
+Find the starting point of a loop.
+Find the length of a loop.
+Remove a loop from the linked list.
+Check whether two linked lists intersect.
+Find the intersection node of two linked lists.
+Find the union of two linked lists.
+Find the intersection of two sorted linked lists.
+Merge two sorted linked lists iteratively.
+Merge two sorted linked lists recursively.
+Merge two unsorted linked lists and sort the result.
+Merge k sorted linked lists.
+Sort a linked list using merge sort.
+Sort a linked list using insertion sort.
+Remove duplicates from a sorted linked list.
+Remove duplicates from an unsorted linked list.
+Remove all nodes that have duplicate values.
+Delete alternate nodes.
+Delete nodes having a greater value on the right side.
+Segregate even and odd valued nodes.
+Segregate odd position nodes and even position nodes.
+Rearrange list as L0 → Ln → L1 → Ln-1.
+Rearrange list in zig-zag fashion.
+Partition a linked list around a pivot x.
+Find the length of the longest increasing consecutive sequence in a linked list.
+Remove the nth node from the end.
+Delete the middle node.
+Find the second middle node in even-length list.
+Find the frequency of each element.
+Count occurrences of a given key.
+Get the decimal value of a binary number represented as a linked list.
+Add 1 to a number represented as a linked list.
+Add two numbers represented by linked lists.
+Subtract two numbers represented by linked lists.
+Multiply two numbers represented by linked lists.
+Compare two linked lists.
+Check whether two linked lists are identical.
+Clone a singly linked list.
+Split a linked list into two halves.
+Split a linked list into k parts.
+Remove zero-sum consecutive nodes.
+Find the maximum twin sum of a linked list.
+Swap kth node from beginning with kth node from end.
+Reverse nodes at even positions.
+Extract alternate nodes into a second list.
+Sort a linked list of 0s, 1s, and 2s.
+Delete nodes whose sum with next node is zero.
+Remove nodes with a given value.
+Remove every k-th node.
+Find the modular node for a given k.
+Find the fractional node for a given k.
+Find the last occurrence of a given element.
+Remove duplicates from a list while keeping only the first occurrence.
+Remove duplicates from a list while keeping only the last occurrence.
+Check whether the linked list length is even or odd.
+Find the maximum element in the linked list.
+Find the minimum element in the linked list.
+Find the sum of all nodes.
+Find the product of all nodes.
+Rearrange list so all negative numbers come before positive numbers.
+Move all occurrences of a key to the end.
+Remove nodes from a linked list that appear in another linked list.
+Convert a linked list into a balanced BST.
+Flatten a linked list with bottom pointers.
+Find the node where cycle begins and break it.
+Reverse only the second half of the list.
+Check whether the list is sorted.
+Make a deep copy of a list with next pointers.
+Implement all basic singly linked list operations in one class.
+2. Doubly Linked List Coding Questions
+Create a doubly linked list.
+Insert at the beginning of a doubly linked list.
+Insert at the end of a doubly linked list.
+Insert at a given position in a doubly linked list.
+Insert after a given node in a doubly linked list.
+Insert before a given node in a doubly linked list.
+Delete the first node in a doubly linked list.
+Delete the last node in a doubly linked list.
+Delete a node by value in a doubly linked list.
+Delete a node by position in a doubly linked list.
+Traverse a doubly linked list in forward direction.
+Traverse a doubly linked list in backward direction.
+Reverse a doubly linked list.
+Find the length of a doubly linked list.
+Search an element in a doubly linked list.
+Find the middle node in a doubly linked list.
+Remove duplicates from a sorted doubly linked list.
+Remove duplicates from an unsorted doubly linked list.
+Sort a doubly linked list.
+Merge two sorted doubly linked lists.
+Reverse doubly linked list in groups of k.
+Rotate a doubly linked list by k nodes.
+Check whether a doubly linked list is palindrome.
+Find pairs with a given sum in a sorted doubly linked list.
+Find triplets with a given sum in a doubly linked list.
+Swap two nodes in a doubly linked list.
+Delete all occurrences of a key in a doubly linked list.
+Convert a binary tree to doubly linked list.
+Convert a doubly linked list to BST.
+Flatten a multilevel doubly linked list.
+Clone a doubly linked list with random pointer.
+Reverse alternate groups in doubly linked list.
+Partition a doubly linked list around a pivot.
+Remove the nth node from the end in doubly linked list.
+Find the intersection of two doubly linked lists.
+Find union of two doubly linked lists.
+Split a doubly linked list into two halves.
+Split a doubly linked list into k parts.
+Rearrange a doubly linked list in zig-zag fashion.
+Reorder a doubly linked list as first-last-second-secondlast.
+Delete nodes having greater value on right side in doubly linked list.
+Move last node to front in doubly linked list.
+Move first node to end in doubly linked list.
+Insert in a sorted doubly linked list.
+Delete from a sorted doubly linked list.
+Reverse only a sublist in doubly linked list.
+Count occurrences of a key in doubly linked list.
+Find the maximum element in doubly linked list.
+Find the minimum element in doubly linked list.
+Find the sum of all nodes in doubly linked list.
+Delete alternate nodes in doubly linked list.
+Remove every k-th node in doubly linked list.
+Separate even and odd valued nodes in doubly linked list.
+Sort a k-sorted doubly linked list.
+Convert an array to doubly linked list.
+Convert a doubly linked list to circular doubly linked list.
+Break a circular doubly linked list into a normal doubly linked list.
+Check whether a doubly linked list is circular.
+Find the last occurrence of a key in doubly linked list.
+Replace every node with sum of prev and next nodes.
+Delete a node given only pointer to that node in doubly linked list.
+Merge sort on doubly linked list.
+Quick sort on doubly linked list.
+Insertion sort on doubly linked list.
+Implement deque using doubly linked list.
+Implement browser back-forward navigation using doubly linked list.
+Implement undo-redo using doubly linked list.
+Implement text editor cursor movement using doubly linked list.
+Implement music playlist using doubly linked list.
+Implement image viewer next-prev navigation using doubly linked list.
+Implement LRU cache using doubly linked list and hashmap.
+Implement LFU cache using doubly linked list and hashmap.
+Reverse nodes in pairs in doubly linked list.
+Swap kth node from front with kth node from back in doubly linked list.
+Find all duplicate pairs in doubly linked list.
+Remove zero-sum consecutive nodes in doubly linked list.
+Find if two doubly linked lists are identical.
+Deep copy a doubly linked list.
+Add two numbers represented by doubly linked list.
+Subtract two numbers represented by doubly linked list.
+Multiply two numbers represented by doubly linked list.
+Remove nodes present in another doubly linked list.
+Join two doubly linked lists alternately.
+Shuffle merge two doubly linked lists.
+Alternate split of doubly linked list.
+Find modular node in doubly linked list.
+Find fractional node in doubly linked list.
+Delete all nodes at odd positions in doubly linked list.
+Delete all nodes at even positions in doubly linked list.
+Rearrange nodes such that all even values come before odd values.
+Remove duplicates while keeping last occurrence in doubly linked list.
+Find length of longest palindrome sublist in doubly linked list.
+Reverse the second half of a doubly linked list.
+Reverse only nodes with even values in doubly linked list.
+Sort a doubly linked list containing only 0s, 1s, and 2s.
+Find median in a sorted doubly linked list.
+Delete middle node of doubly linked list.
+Pairwise swap data or links in doubly linked list.
+Insert multiple nodes at alternate positions.
+Implement all basic doubly linked list operations in one class.
+3. Circular Linked List Coding Questions
+Create a circular singly linked list.
+Insert a node at the beginning of circular linked list.
+Insert a node at the end of circular linked list.
+Insert a node at a given position in circular linked list.
+Delete the first node in circular linked list.
+Delete the last node in circular linked list.
+Delete a node by value in circular linked list.
+Delete a node by position in circular linked list.
+Traverse a circular linked list.
+Count the number of nodes in circular linked list.
+Search for an element in circular linked list.
+Find the middle node of circular linked list.
+Split a circular linked list into two halves.
+Split a circular linked list into two equal circular lists.
+Check whether a linked list is circular.
+Convert singly linked list to circular linked list.
+Convert circular linked list to singly linked list.
+Reverse a circular linked list.
+Reverse a circular linked list in groups of k.
+Detect loop in circular linked list.
+Distinguish between looped singly linked list and genuine circular linked list.
+Find the last node in circular linked list.
+Insert into a sorted circular linked list.
+Delete from a sorted circular linked list.
+Sort a circular linked list.
+Merge two circular linked lists.
+Merge two sorted circular linked lists.
+Find the length of circular linked list.
+Remove duplicates from sorted circular linked list.
+Remove duplicates from unsorted circular linked list.
+Check whether a circular linked list is palindrome.
+Find the nth node from the end in circular linked list.
+Rotate a circular linked list by k nodes.
+Move last node to front in circular linked list.
+Move first node to end in circular linked list.
+Delete every k-th node in circular linked list.
+Solve Josephus problem using circular linked list.
+Simulate round-robin scheduling using circular linked list.
+Implement circular queue using circular linked list.
+Split circular linked list into odd and even position lists.
+Separate even and odd valued nodes in circular linked list.
+Reorder circular linked list in first-last-second-secondlast pattern.
+Reverse alternate k nodes in circular linked list.
+Swap two nodes in circular linked list.
+Swap first and last nodes in circular linked list.
+Sort a circular linked list containing 0s, 1s, and 2s.
+Find maximum element in circular linked list.
+Find minimum element in circular linked list.
+Find sum of all nodes in circular linked list.
+Check whether two circular linked lists are identical.
+Find intersection of two circular linked lists.
+Find union of two circular linked lists.
+Clone a circular linked list.
+Deep copy a circular linked list with random pointer.
+Delete alternate nodes in circular linked list.
+Add two numbers represented by circular linked lists.
+Remove all occurrences of a key in circular linked list.
+Reverse a circular doubly linked list.
+Convert circular singly linked list to circular doubly linked list.
+Convert circular doubly linked list to circular singly linked list.
+Insert after a given node in circular linked list.
+Insert before a given node in circular linked list.
+Delete node after a given node in circular linked list.
+Find the second middle in circular linked list.
+Split circular linked list into k parts.
+Check whether circular linked list length is even or odd.
+Pairwise swap nodes in circular linked list.
+Alternate split of circular linked list.
+Join two circular linked lists alternately.
+Remove zero-sum consecutive nodes in circular linked list.
+Find modular node in circular linked list.
+Find fractional node in circular linked list.
+Rearrange circular linked list in zig-zag fashion.
+Partition circular linked list around pivot x.
+Remove nodes with greater value on right side in circular linked list.
+Flatten nested circular linked list.
+Sort a k-sorted circular linked list.
+Insert a sequence of nodes into circular linked list.
+Delete a sequence of nodes from circular linked list.
+Delete the middle node in circular linked list.
+Find cycle entry in a corrupted circular linked list.
+Break circular linked list at a given node.
+Reverse only a sublist in circular linked list.
+Delete all odd-position nodes in circular linked list.
+Delete all even-position nodes in circular linked list.
+Shuffle merge two circular linked lists.
+Compare two circular linked lists lexicographically.
+Find pairs with given sum in circular linked list.
+Check whether circular linked list is sorted.
+Remove duplicates while keeping only first occurrence.
+Remove duplicates while keeping only last occurrence.
+Convert array to circular linked list.
+Convert circular linked list to array.
+Implement playlist next-repeat logic using circular linked list.
+Implement token-ring network simulation using circular linked list.
+Implement hot-potato game using circular linked list.
+Find median in sorted circular linked list.
+Find kth node in circular linked list.
+Find kth node from end in circular linked list.
+Implement all basic circular linked list operations in one class.
+4. Linked List Pattern and Advanced Coding Questions
+Detect a cycle using fast and slow pointers.
+Find the entry point of a cycle.
+Find the length of a cycle.
+Find the middle node using fast and slow pointers.
+Check whether a linked list is palindrome using slow-fast and reversal.
+Reorder list as L0 → Ln → L1 → Ln-1.
+Reverse nodes in k-group.
+Reverse alternate k-group nodes.
+Swap nodes in pairs.
+Remove nth node from end using two pointers.
+Find intersection point of two linked lists using two pointers.
+Merge two sorted linked lists.
+Merge k sorted linked lists using heap.
+Sort a linked list using merge sort.
+Sort a linked list using insertion sort.
+Partition a linked list around x.
+Segregate odd and even nodes by position.
+Segregate odd and even nodes by value.
+Remove duplicates from sorted linked list.
+Remove all duplicates completely from sorted linked list.
+Clone a linked list with random pointer using hashmap.
+Clone a linked list with random pointer without extra space.
+Flatten a multilevel linked list.
+Flatten a linked list with bottom pointers.
+Add two numbers represented by linked lists.
+Add one to a number represented by linked list.
+Subtract two numbers represented by linked lists.
+Multiply two numbers represented by linked lists.
+Reverse a linked list recursively.
+Reverse a linked list iteratively.
+Reverse a sublist between two given positions.
+Rotate list by k positions.
+Move last node to front.
+Remove zero-sum consecutive nodes.
+Find maximum twin sum.
+Split linked list into k parts.
+Find the first common node of Y-shaped lists.
+Detect and remove cycle.
+Find if two lists intersect when one contains a cycle.
+Find if two cyclic linked lists intersect.
+Rearrange list in zig-zag pattern.
+Delete nodes having greater value on the right.
+Sort list containing only 0s, 1s, and 2s.
+Remove all nodes with a specific value.
+Delete middle node.
+Reverse nodes at alternate positions.
+Extract alternate nodes and append at end.
+Find modular node.
+Find fractional node.
+Find square root node of linked list.
+Check whether linked list is circular.
+Convert binary linked list to integer.
+Compute decimal to linked list representation.
+Create a deep copy of a list with arbitrary pointers.
+Remove duplicates from unsorted linked list using hashing.
+Remove duplicates from unsorted linked list without extra space.
+Check whether the linked list is sorted.
+Find median of sorted linked list.
+Find kth largest node in linked list.
+Find kth smallest node in linked list.
+Reverse data instead of links in a linked list.
+Reverse only even-length groups.
+Reverse nodes between zeros.
+Merge nodes between zeros.
+Delete nodes that sum to zero.
+Insert gcd nodes between adjacent nodes.
+Find critical points in linked list.
+Find distance between critical points.
+Delete nodes present in another list.
+Union and intersection of two unsorted linked lists.
+Pairwise swap links.
+Pairwise swap data.
+Sort a k-sorted linked list.
+Implement quick sort on linked list.
+Implement merge sort on linked list.
+Implement radix-sort-like approach for binary linked list.
+Find maximum sum path across two linked lists.
+Find common elements from two sorted linked lists.
+Construct BST from sorted linked list.
+Convert sorted linked list to balanced BST.
+Convert binary tree to linked list.
+Convert linked list to complete binary tree.
+Delete every k-th node.
+Solve skip-and-delete problem.
+Find longest palindrome sublist.
+Reverse linked list in blocks of increasing size.
+Alternate split of linked list.
+Shuffle merge two linked lists.
+Sorted merge by changing pointers only.
+Clone list with child pointers.
+Flatten multilevel doubly linked list.
+Flatten nested list iterator using linked list logic.
+Implement polynomial addition using linked list.
+Implement sparse matrix using linked list.
+Represent graph adjacency list using linked list.
+Reverse the second half and compare two halves.
+Find next greater node for each node.
+Remove nodes whose next greater value exists on right.
+Perform insertion into a skip-list-like linked structure.
+Design a full linked list utility library.
+5. Design and Implementation Coding Questions Using Linked List
+Implement stack using linked list.
+Implement queue using linked list.
+Implement deque using doubly linked list.
+Implement circular queue using circular linked list.
+Implement priority queue using linked list.
+Implement browser history using doubly linked list.
+Implement undo-redo functionality using doubly linked list.
+Implement music playlist using circular linked list.
+Implement image gallery next-prev viewer using doubly linked list.
+Implement tab manager using doubly linked list.
+Design an LRU cache.
+Design an LFU cache.
+Design an MRU cache.
+Implement hashmap collision chaining using linked list.
+Implement hash set using linked list buckets.
+Design a text editor cursor movement system.
+Design a train reservation waitlist using linked list.
+Design a print queue using linked list.
+Design a task scheduler using circular linked list.
+Design round-robin CPU scheduling using circular linked list.
+Design a call log with back-forward navigation.
+Design a recent files list.
+Design a notification queue.
+Design chat message history using doubly linked list.
+Design a media player next-prev-repeat system.
+Design a web crawler URL frontier using linked list.
+Design a memory free-list manager.
+Design a custom allocator using linked list.
+Design a garbage collector free block tracker.
+Design a symbol table using linked list chaining.
+Design polynomial representation and operations using linked list.
+Design sparse matrix representation using linked list.
+Design big integer arithmetic using linked list.
+Design version control history using doubly linked list.
+Design breadcrumb navigation using doubly linked list.
+Design file system directory traversal list.
+Design elevator request queue using linked list.
+Design customer support ticket queue using linked list.
+Design token ring network simulation.
+Design Josephus game simulator.
+Design multiplayer turn scheduler using circular linked list.
+Design parking lot free slot tracker using linked list.
+Design inventory batch tracker using linked list.
+Design warehouse picking sequence using linked list.
+Design route planner stop chain using linked list.
+Design train coach linkage model using doubly linked list.
+Design operating system process list using linked list.
+Design device driver request queue.
+Design file chunk list in a storage system.
+Design blockchain-like block chaining using linked list.
+Design a cloneable playlist with random song pointer.
+Design a recent search history system.
+Design editor line buffer using linked list.
+Design spreadsheet row navigation using doubly linked list.
+Design a reservation cancellation undo system.
+Design a hotel room waitlist manager.
+Design a restaurant table queue.
+Design a hospital patient queue with priority rules.
+Design a bus stop circular route tracker.
+Design a package delivery route loop.
+Design cloud job retry queue.
+Design background worker linked task chain.
+Design API request middleware chain.
+Design a command execution history.
+Design a transaction rollback chain.
+Design a dependency resolution chain.
+Design a recent contacts list.
+Design a contact manager with alphabetical buckets.
+Design a social media feed merge system using linked lists.
+Design a timeline stitching system.
+Design a bookmarks manager with back and forward movement.
+Design reusable object pool using linked list.
+Design a scheduler with periodic tasks.
+Design a thread-safe linked list.
+Design a lock-free linked list.
+Implement concurrent queue using linked list.
+Implement concurrent stack using linked list.
+Design a free block coalescing system with doubly linked list.
+Design segmented cache using multiple linked lists.
+Design a page replacement algorithm using linked list.
+Design a session timeout tracker.
+Design a user activity recent log.
+Design a workflow engine state chain.
+Design a manufacturing process stage tracker.
+Design a shipment tracking event chain.
+Design an IoT sensor event buffer using linked list.
+Design an alarm history buffer using circular linked list.
+Design firmware rollback version chain.
+Design a command queue for embedded system tasks.
+Design packet buffering with linked list.
+Design retransmission queue in a communication stack.
+Design a BLE device discovery cache using linked list.
+Design an MQTT offline message queue using linked list.
+Design a report generation job queue using linked list.
+Design a chunked upload tracker using linked list.
+Design a compiler token stream using linked list.
+Design an AST sibling chain using linked list.
+Design a finite state machine transition list.
+Design a custom collection framework using linked lists.
+Design a complete linked list package supporting SLL, DLL, and CLL.
+2. Doubly Linked List (DLL)
+Theory Questions
+What is a doubly linked list and how does it differ from SLL?
+What are the advantages of DLL over SLL?
+What is the extra memory overhead in DLL?
+How does backward traversal work in DLL?
+What are the complexities of insertion and deletion in DLL?
+When is DLL preferred over SLL?
+What are the risks of pointer mismanagement in DLL?
+How does deletion become easier in DLL compared to SLL?
+What are sentinel nodes and how are they used in DLL?
+How does DLL improve performance in certain use cases like LRU cache?
+
+3. Circular Linked List (CLL)
+Theory Questions
+What is a circular linked list?
+How does CLL differ from SLL?
+What are advantages of circular linked list?
+How do you detect if a list is circular?
+What are common use cases of CLL?
+Why is traversal different in CLL?
+What are the risks of infinite loops in CLL?
+How is memory managed in CLL?
+When would you prefer CLL over SLL?
+How does tail pointer optimization work in CLL?
