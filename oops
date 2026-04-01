@@ -1,0 +1,250 @@
+Explain the difference between inheritance and composition in Python. When would you prefer one over the other?
+
+✅ Answer (Straight to the point)
+🔹 Inheritance
+Represents “is-a” relationship
+Child class inherits behavior from parent
+Tight coupling → changes in parent can impact child
+class Vehicle:
+    def start(self):
+        return "Vehicle started"
+
+class Car(Vehicle):
+    def drive(self):
+        return "Car driving"
+
+👉 Car is a Vehicle
+
+🔹 Composition
+Represents “has-a” relationship
+One class contains another class as a component
+Loose coupling → more flexible and maintainable
+class Engine:
+    def start(self):
+        return "Engine started"
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+    def drive(self):
+        return self.engine.start() + " and Car driving"
+
+👉 Car has an Engine
+
+⚖️ When to Use What
+Use Inheritance when:
+Clear hierarchical relationship exists
+Behavior is shared and stable
+Example: Animal → Dog
+Use Composition when:
+You want flexibility and scalability
+Components may change independently
+Example: Car → Engine, Battery, GPS
+⚠️ Reality (Important)
+Overusing inheritance leads to:
+Fragile design
+Hard-to-maintain code
+
+Modern design prefers:
+
+Composition over inheritance
+
+💻 Coding Exercise
+Problem:
+
+Design a system where different notification types (Email, SMS) can be sent. Avoid inheritance explosion.
+
+Expected Approach (Composition + Strategy Pattern)
+class EmailService:
+    def send(self, message):
+        return f"Sending Email: {message}"
+
+class SMSService:
+    def send(self, message):
+        return f"Sending SMS: {message}"
+
+class Notification:
+    def __init__(self, service):
+        self.service = service
+
+    def notify(self, message):
+        return self.service.send(message)
+
+# Usage
+email_notification = Notification(EmailService())
+sms_notification = Notification(SMSService())
+
+print(email_notification.notify("Hello"))
+print(sms_notification.notify("Hi"))
+🔍 What Interviewer Evaluates
+Understanding of design principles (SOLID)
+Ability to avoid tight coupling
+Real-world system thinking (not just syntax)
+
+If you want, I can give:
+
+Advanced OOP questions (design patterns, metaclasses, MRO)
+Or hands-on coding challenges for interviews (30–45 min level)
+now explain answer
+
+Here is a clear, no-nonsense explanation of the answer, focusing on how it works internally and why it matters in real systems.
+
+🧠 Core Concept
+
+You were asked:
+
+Difference between inheritance vs composition
+
+This is not a syntax question.
+It is a design decision question — poor choice here leads to rigid systems.
+
+🔹 1. Inheritance — What actually happens
+class Vehicle:
+    def start(self):
+        return "Vehicle started"
+
+class Car(Vehicle):
+    def drive(self):
+        return "Car driving"
+🔍 Internal behavior
+Car inherits all methods from Vehicle
+Python uses Method Resolution Order (MRO) to find methods
+
+When you call:
+
+car = Car()
+car.start()
+
+→ Python checks:
+
+Car class
+Vehicle class
+⚠️ Problem
+Car is tightly coupled to Vehicle
+If Vehicle.start() changes → may break all child classes
+📌 Key idea
+
+Inheritance creates dependency at class level
+
+🔹 2. Composition — What actually happens
+class Engine:
+    def start(self):
+        return "Engine started"
+
+class Car:
+    def __init__(self):
+        self.engine = Engine()
+
+    def drive(self):
+        return self.engine.start() + " and Car driving"
+🔍 Internal behavior
+Car does NOT inherit
+It creates and uses an Engine object
+
+When calling:
+
+car.drive()
+
+→ Car delegates work to Engine
+
+📌 Key idea
+
+Composition creates dependency at object level (runtime)
+
+⚖️ Real Difference (Critical)
+Factor	Inheritance	Composition
+Relationship	IS-A	HAS-A
+Coupling	Tight	Loose
+Flexibility	Low	High
+Change impact	High	Low
+Runtime swap	❌ No	✅ Yes
+🔥 Why Composition Wins (In Real Systems)
+Problem with inheritance:
+
+If tomorrow:
+
+You want ElectricEngine
+Or HybridEngine
+
+With inheritance:
+
+class ElectricCar(Car): ...
+class HybridCar(Car): ...
+
+👉 Explosion of classes
+
+With composition:
+class Car:
+    def __init__(self, engine):
+        self.engine = engine
+
+Now:
+
+Car(Engine())
+Car(ElectricEngine())
+Car(HybridEngine())
+
+👉 No rewrite needed
+
+💡 Deep Insight (What Interviewer Wants)
+
+Good engineers understand:
+
+Inheritance = compile-time rigidity
+Composition = runtime flexibility
+
+🔹 Coding Exercise Explanation
+class Notification:
+    def __init__(self, service):
+        self.service = service
+
+    def notify(self, message):
+        return self.service.send(message)
+What is happening:
+Notification does not care:
+Email
+SMS
+It just calls .send()
+This is:
+
+👉 Strategy Pattern
+
+Why this is powerful:
+
+You can plug anything:
+
+Notification(WhatsAppService())
+Notification(PushNotificationService())
+
+No changes in Notification class.
+
+⚠️ Brutal Truth
+
+If you default to inheritance:
+
+Your system becomes:
+Hard to extend
+Hard to test
+Fragile
+
+If you use composition:
+
+Your system becomes:
+Modular
+Replaceable
+Scalable
+🧾 Final Takeaway
+Use inheritance only when:
+Relationship is stable and obvious
+Use composition when:
+You expect change (which is almost always)
+
+👉 Industry best practice:
+
+Prefer composition over inheritance
+
+If you want, next I can give:
+
+A real system design example (microservices / IoT) using this concept
+Or advanced Python OOP questions (MRO, metaclasses, decorators) for interviews
