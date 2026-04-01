@@ -248,3 +248,10 @@ If you want, next I can give:
 
 A real system design example (microservices / IoT) using this concept
 Or advanced Python OOP questions (MRO, metaclasses, decorators) for interviews
+
+
+Explain the difference between:
+
+@staticmethod
+@classmethod
+Instance methods
