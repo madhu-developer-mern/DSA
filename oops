@@ -255,3 +255,13 @@ Explain the difference between:
 @staticmethod
 @classmethod
 Instance methods
+
+
+What is encapsulation in OOP?
+How is encapsulation implemented in Python?
+Difference between:
+Public
+Protected
+Private members
+What is name mangling in Python and why is it used?
+Is encapsulation strictly enforced in Python?
